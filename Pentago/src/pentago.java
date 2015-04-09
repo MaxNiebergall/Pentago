@@ -29,30 +29,136 @@ public class pentago {
 		for (int x = 0; x < 4; x++) {
 			for (int y = 0; y < 9; y++) {
 				linearBoards[x][y] = 0;
+				
 			}
 		}
+		
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(0,0))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(0,1))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(0,2))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(0,3))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(0,4))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(0,5))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(0,6))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(0,7))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(0,8))));
+		System.out.println();
+		
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(1,0))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(1,1))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(1,2))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(1,3))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(1,4))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(1,5))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(1,6))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(1,7))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(1,8))));
+		System.out.println();
+
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(2,0))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(2,1))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(2,2))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(2,3))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(2,4))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(2,5))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(2,6))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(2,7))));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(2,8))));
+		System.out.println();
+		
+		/*
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(3,0)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(3,1)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(3,2)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(3,3)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(3,4)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(3,5)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(3,6)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(3,7)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(3,8)));
+		System.out.println();
+		
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(4,0)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(4,1)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(4,2)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(4,3)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(4,4)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(4,5)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(4,6)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(4,7)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(4,8)));
+		System.out.println();
+		
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(5,0)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(5,1)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(5,2)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(5,3)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(5,4)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(5,5)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(5,6)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(5,7)));
+		System.out.println(squarePositionToLinearPosition(realPositionToSquarePosition(new Point(5,8)));
+		System.out.println();
+		
+		System.out.println(realPositionToSquarePosition(new Point(6,0)));
+		System.out.println(realPositionToSquarePosition(new Point(6,1)));
+		System.out.println(realPositionToSquarePosition(new Point(6,2)));
+		System.out.println(realPositionToSquarePosition(new Point(6,3)));
+		System.out.println(realPositionToSquarePosition(new Point(6,4)));
+		System.out.println(realPositionToSquarePosition(new Point(6,5)));
+		System.out.println(realPositionToSquarePosition(new Point(6,6)));
+		System.out.println(realPositionToSquarePosition(new Point(6,7)));
+		System.out.println(realPositionToSquarePosition(new Point(6,8)));
+		System.out.println();
+		
+		System.out.println(realPositionToSquarePosition(new Point(7,0)));
+		System.out.println(realPositionToSquarePosition(new Point(7,1)));
+		System.out.println(realPositionToSquarePosition(new Point(7,2)));
+		System.out.println(realPositionToSquarePosition(new Point(7,3)));
+		System.out.println(realPositionToSquarePosition(new Point(7,4)));
+		System.out.println(realPositionToSquarePosition(new Point(7,5)));
+		System.out.println(realPositionToSquarePosition(new Point(7,6)));
+		System.out.println(realPositionToSquarePosition(new Point(7,7)));
+		System.out.println(realPositionToSquarePosition(new Point(7,8)));
+		System.out.println();
+		
+		System.out.println(realPositionToSquarePosition(new Point(8,0)));
+		System.out.println(realPositionToSquarePosition(new Point(8,1)));
+		System.out.println(realPositionToSquarePosition(new Point(8,2)));
+		System.out.println(realPositionToSquarePosition(new Point(8,3)));
+		System.out.println(realPositionToSquarePosition(new Point(8,4)));
+		System.out.println(realPositionToSquarePosition(new Point(8,5)));
+		System.out.println(realPositionToSquarePosition(new Point(8,6)));
+		System.out.println(realPositionToSquarePosition(new Point(8,7)));
+		System.out.println(realPositionToSquarePosition(new Point(8,8)));
+		System.out.println();
+	*/	
+		
+		
 		boolean gameOver = false;
 		do {
 			if (useLinearBoards) {
 				convertBoards();
 			}
-			System.out.println("  0 1 2 3 4 5");
-			System.out.println("  ___________");
+			System.out.println("   0 1 2 3 4 5");
+			System.out.println("   ____________");
 			for (int y = 0; y < 6; y++) {
 				System.out.print(y + " |");
-				for (int x = 1; x < 6; x++) {// every row
+				for (int x = 0; x < 6; x++) {// every row
 					System.out.print(squareBoards[((x / 3) + (y / 3) * 2)][(x % 3)][(y % 3)] + " ");
 				}
 				System.out.println("|");
 			}
-			System.out.println("  ^^^^^^^^^^^^");
+			System.out.println("  ^^^^^^^^^^^^^^");
 			try {
-				gameOver = !playTurn();
+				gameOver = playTurn();
 			} catch (NumberFormatException | IOException e) {
 				e.printStackTrace();
 			}
 
 		} while (!gameOver);
+		
+		System.out.println("Game Over!");
 
 	}
 
@@ -87,6 +193,9 @@ public class pentago {
 			int type = squareBoards[x / 3][0][0];// getting type at the left-most space. This space must be skipped in next loop.
 			for (int y = 1; y < 6; y++) {// every row
 				if (type == squareBoards[((x / 3) + (y / 3) * 2)][(x % 3)][(y % 3)]) { // "boardNum:|"+((x/3)+(y/3)*2)+"| xval:|"+(x%3)+"| yval:|"+(y%3)+"| y:|"+y+"| x:|"+x
+					if(type==0){
+						return false;
+					}
 					counter++;
 				} else {
 					type = squareBoards[((x / 3) + (y / 3) * 2)][(x % 3)][(y % 3)];
@@ -110,6 +219,9 @@ public class pentago {
 			int type = squareBoards[y / 3][0][0];// getting type at the top. This space must be skipped in next loop.
 			for (int x = 1; x < 6; x++) {// every row
 				if (type == squareBoards[((x / 3) + (y / 3) * 2)][(x % 3)][(y % 3)]) { // "boardNum:|" + ((x / 3) + (y / 3) * 2) + "| xval:|" + (x % 3) + "| yval:|" + (y % 3) + "| y:|" + y + "| x:|" + x
+					if(type==0){
+						return false;
+					}
 					counter++;
 				} else {
 					type = squareBoards[((x / 3) + (y / 3) * 2)][(x % 3)][(y % 3)];
@@ -125,11 +237,20 @@ public class pentago {
 	}
 
 	public boolean scoreDiagonals() {
+		return false;
+		
+		/*
 		if (useLinearBoards) {
 			convertBoards();
 		}
 
 		Point validDiagonals[][] = new Point[6][6];
+		
+		for(int x=0; x<6; x++){
+			for(int y=0; y<6; y++){
+				validDiagonals[x][y] = new Point(0,0);
+			}
+		}
 		// ------------------- left to right
 		validDiagonals[0][0].move(0, 0); // center
 		validDiagonals[0][1].move(1, 1);
@@ -244,6 +365,7 @@ public class pentago {
 		}
 
 		return false;
+		*/
 	}
 
 	public void convertBoards() {
@@ -295,7 +417,10 @@ public class pentago {
 	 * @return Point3D
 	 */
 	public Point3D realPositionToSquarePosition(Point other) {
-		return new Point3D(((other.getX() / 3) + (other.getY() / 3) * 2), (other.getX() % 3), (other.getY() % 3));
+		
+		System.out.println("x: |"+ other.getX()+"| y: |"+other.getY()+"|");
+		System.out.println(""+(int)((int)(other.getX() / 3) + ((int)other.getY() / 3) * 2) + (int)(other.getX() % 3) + (int)(other.getY() % 3));
+		return new Point3D((int)((int)(other.getX() / 3) + ((int)other.getY() / 3) * 2), (int)(other.getX() % 3), (int)(other.getY() % 3));
 	}
 
 	/**
